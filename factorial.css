@@ -1,0 +1,89 @@
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: white;
+    margin: 200px auto;
+}
+
+.check {
+    max-width: 600px;
+    /* height: 600px; */
+    padding: 30px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.prime {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.f-prime {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    color: red;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 6px 10px;
+    border: 1px solid orange;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+input.focus {
+    outline-color: red;
+}
+
+.b-btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: aquamarine;
+    border: transparent solid 2px;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 5s;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: olivedrab;
+    border: 2px solid black;
+    color: white;
+    transition: 4.3s;
+}
+
+@media screen and (min-width:380px) {
+    .check {
+        width: 100%;
+    }
+}

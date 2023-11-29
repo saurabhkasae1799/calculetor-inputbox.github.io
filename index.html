@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculetor-inputbox</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="body1">
+            <h1>Calculetor- <span>inputbox</span></h1>
+            <form action="">
+                <fieldset>
+                    <legend>Calculetor-inputbox</legend>
+                    <div class="cul">
+                        <div class="cul-1">
+                            <label for="first">Number 1</label>
+                            <input type="number" name="first" id="first" placeholder="Enter the number 1" required>
+                        </div>
+
+                        <div class="cul-1">
+                            <label for="second">Number 2</label>
+                            <input type="number" name="second" id="second" placeholder="Enter the number 2" required>
+                        </div>
+                        <div class="select1">
+                            <label for="ope">Choose</label>
+                            <select name="ope" id="ope">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                        </div>
+                        <div class="cul-1">
+                            <label for="res">Result</label>
+                            <input type="text" name="res" id="res" readonly>
+                        </div>
+                        <div class="btn">
+                            <button onclick="cal()">Calculetor</button>
+                        </div>
+                        <div class="btn">
+                            <a href="factorial.html" target="_parent">
+                                <button type="button">Factorial</button></a>
+                        </div>
+
+                    </div>
+                </fieldset>
+            </form>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <link rel="stylesheet" href="factorial.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="check">
+            <h1>Factorial Number</h1>
+            <form action="">
+                <fieldset>
+                    <legend>Factorial</legend>
+                    <div class="prime">
+                        <div class="f-prime">
+                            <label for="first">Number <span>*</span></label>
+                            <input type="number" name="first" id="first" placeholder="Enter the number" required>
+                        </div>
+                        <div class="f-prime">
+                            <label for="second">check </label>
+                            <input type="text" name="second" id="second" readonly>
+                        </div>
+                    </div>
+                    <div class="b-btn">
+                        <button onclick="factorial()"><b>Factorial</b></button>
+                        <a href="index.html">
+                            <button type="button"><b>Calculetor</b></button></a>
+                    </div>
+
+
+
+                </fieldset>
+            </form>
+
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function factorial() {
+        var i, no, fact;
+        fact = 1
+        no = Number(document.getElementById("first").value);
+        for (i = 1; i <= no; i++) {
+            fact = fact * i;
+        }
+        document.getElementById('second').value = fact;
+    }
+</script>
+
+</html>
